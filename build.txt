@@ -1,0 +1,3 @@
+displayName = Cuprarria
+author = Bronnyk
+version = 0.1
