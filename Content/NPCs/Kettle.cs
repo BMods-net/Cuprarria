@@ -19,12 +19,12 @@ namespace Cuprarria.Content.NPCs
         {
             NPC.townNPC = true;
             NPC.friendly = true;
-            NPC.width = 20;
-            NPC.height = 40;
+            NPC.width = 40;
+            NPC.height = 56;
             NPC.aiStyle = 7;
             NPC.damage = 10;
-            NPC.defense = 15;
-            NPC.lifeMax = 250;
+            NPC.defense = 20;
+            NPC.lifeMax = 300;
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
             NPC.knockBackResist = 0.5f;
@@ -75,7 +75,6 @@ namespace Cuprarria.Content.NPCs
     };
         }
 
-        // Настройка магазина
         public override void AddShops()
         {
             var npcShop = new NPCShop(Type)
