@@ -19,7 +19,7 @@ namespace Cuprarria.Content.NPCs
         {
             NPC.townNPC = true;
             NPC.friendly = true;
-            NPC.width = 18;
+            NPC.width = 20;
             NPC.height = 40;
             NPC.aiStyle = 7;
             NPC.damage = 10;
@@ -43,7 +43,7 @@ namespace Cuprarria.Content.NPCs
 
         public override void SetChatButtons(ref string button, ref string button2)
         {
-            button = "Shop";
+            button = "Store";
         }
 
         public override void OnChatButtonClicked(bool firstButton, ref string shopName)
@@ -58,10 +58,14 @@ namespace Cuprarria.Content.NPCs
         {
             WeightedRandom<string> chat = new WeightedRandom<string>();
 
-            chat.Add("Hello");
-            chat.Add("Test");
+            chat.Add("Hello"); // Will be another
+            chat.Add("Test"); // Will be another
+            chat.Add("Hi"); // Will be another
+            chat.Add("Something"); // Will be another
 
             Player player = Main.LocalPlayer;
+
+            return chat;
         }
 
         public override List<string> SetNPCNameList()
