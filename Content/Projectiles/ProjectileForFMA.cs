@@ -20,7 +20,7 @@ namespace Cuprarria.Content.Projectiles
             Projectile.timeLeft = 450;
             Projectile.penetrate = 5;
 
-            Projectile.aiStyle = 1;      
+            Projectile.aiStyle = 0;      
             AIType = ProjectileID.Bullet;
         }
     }
