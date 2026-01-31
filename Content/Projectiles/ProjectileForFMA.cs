@@ -8,8 +8,8 @@ namespace Cuprarria.Content.Projectiles
     {
         public override void SetDefaults()
         {
-            Projectile.width = 16;
-            Projectile.height = 16;
+            Projectile.width = 20;
+            Projectile.height = 20;
 
             Projectile.friendly = true;  
             Projectile.hostile = false;
