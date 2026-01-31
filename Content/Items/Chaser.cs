@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Cuprarria.Content.Items
 {
-    public class FirstMagicalAbility : ModItem
+    public class Chaser : ModItem
     {
         public override void SetDefaults()
         {
@@ -18,15 +18,15 @@ namespace Cuprarria.Content.Items
 
             Item.noMelee = true;
             Item.DamageType = DamageClass.Magic;
-            Item.damage = 30;
+            Item.damage = 20;
             Item.knockBack = 0;
 
             Item.mana = 0;
 
-            Item.shoot = ModContent.ProjectileType<Projectiles.ProjectileForFMA>();
+            Item.shoot = ModContent.ProjectileType<Projectiles.ProjectileChaser>();
             Item.shootSpeed = 14f;
 
-            Item.rare = ItemRarityID.Blue;
+            Item.rare = ItemRarityID.Green;
             Item.value = Item.buyPrice(silver: 0);
 
             Item.UseSound = SoundID.Item20;
