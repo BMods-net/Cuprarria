@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Cuprarria.Content.Items
 {
-    public class Chaser : ModItem
+    public class Roundabout : ModItem
     {
         public override void SetDefaults()
         {
@@ -18,15 +18,15 @@ namespace Cuprarria.Content.Items
 
             Item.noMelee = true;
             Item.DamageType = DamageClass.Magic;
-            Item.damage = 20;
+            Item.damage = 40;
             Item.knockBack = 0;
 
             Item.mana = 0;
 
             Item.shoot = ModContent.ProjectileType<Projectiles.ProjectileChaser>();
-            Item.shootSpeed = 14f;
+            Item.shootSpeed = 12f;
 
-            Item.rare = ItemRarityID.Green;
+            Item.rare = ItemRarityID.Cyan;
             Item.value = Item.buyPrice(silver: 0);
 
             Item.UseSound = SoundID.Item20;
