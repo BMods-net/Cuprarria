@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Cuprarria.Content.Projectiles
 {
-    public class ProjectileForFMA : ModProjectile
+    public class ProjectilePeashooter : ModProjectile
     {
         public override void SetDefaults()
         {

@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Cuprarria.Content.Items
 {
-    public class FirstMagicalAbility : ModItem
+    public class Peashooter : ModItem
     {
         public override void SetDefaults()
         {
@@ -18,12 +18,12 @@ namespace Cuprarria.Content.Items
 
             Item.noMelee = true;
             Item.DamageType = DamageClass.Magic;
-            Item.damage = 30;
+            Item.damage = 20;
             Item.knockBack = 0;
 
             Item.mana = 0;
 
-            Item.shoot = ModContent.ProjectileType<Projectiles.ProjectileForFMA>();
+            Item.shoot = ModContent.ProjectileType<Projectiles.ProjectilePeashooter>();
             Item.shootSpeed = 14f;
 
             Item.rare = ItemRarityID.Blue;

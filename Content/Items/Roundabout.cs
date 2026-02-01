@@ -18,7 +18,7 @@ namespace Cuprarria.Content.Items
 
             Item.noMelee = true;
             Item.DamageType = DamageClass.Magic;
-            Item.damage = 40;
+            Item.damage = 30;
             Item.knockBack = 0;
 
             Item.mana = 0;
